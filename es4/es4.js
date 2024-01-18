@@ -39,3 +39,38 @@ rl.question('Inserisci un numero: ', (num) => {
 rl.on('close', () => {
     process.exit(0);
 });
+
+
+/*
+let val = [];
+function fibo(n) {
+
+    if (n == 2) {
+        val = [1, 1];
+
+    } else {
+        val = f(n - 1);
+        val.push(val[n - 2] + val[n - 3]);
+    }
+    return val;
+}
+
+
+function fiboAsinc(n, callback) {
+    if (n == 2) {
+        val = [1, 1];
+        callback(val);
+    }
+    else {
+        setImmediate(() => {
+            fiboAsinc(n - 1, (val) => {
+                val.push(val[n - 2] + val[n - 3]);
+                callback(val);
+            });
+        });
+    });
+
+} 
+    
+
+*/
